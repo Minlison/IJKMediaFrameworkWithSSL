@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "IJKMediaFrameworkWithSSL"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.4"
   spec.summary      = "IJKMediaFrameworkWithSSL"
   spec.description  = <<-DESC
                         IJKMediaFrameworkWithSSL
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "yuanhang" => "yuanhang.1991@icloud.com" }
   spec.source       = { :git => "https://github.com/Minlison/IJKMediaFrameworkWithSSL.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = 'IJKMediaFrameworkWithSSL.framework'
+  spec.vendored_frameworks = 'IJKMediaFrameworkWithSSL.xcframework'
   spec.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
   spec.libraries   = "bz2", "z", "c++"
   spec.user_target_xcconfig  =  {'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
